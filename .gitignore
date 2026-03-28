@@ -11,3 +11,6 @@ iso_root/
 .DS_Store
 *.exe
 zigix
+userspace/zinit/zinit
+userspace/zsh/main
+userspace/zsh/zsh
