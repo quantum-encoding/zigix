@@ -1,0 +1,13 @@
+.zig-cache/
+zig-out/
+*.o
+*.img
+*.iso
+__pycache__/
+demo_logs/
+test-logs/
+test-results/
+iso_root/
+.DS_Store
+*.exe
+zigix

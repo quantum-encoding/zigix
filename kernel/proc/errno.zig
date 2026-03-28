@@ -1,0 +1,44 @@
+/// Linux-compatible errno constants.
+/// Syscall handlers return negative errno via:
+///   frame.rax = @bitCast(@as(i64, -errno.ENOSYS))
+
+pub const EPERM: i64 = 1; // Operation not permitted
+pub const ENOENT: i64 = 2; // No such file or directory
+pub const ESRCH: i64 = 3; // No such process
+pub const EINTR: i64 = 4; // Interrupted system call
+pub const EIO: i64 = 5; // I/O error
+pub const EBADF: i64 = 9; // Bad file descriptor
+pub const ECHILD: i64 = 10; // No child processes
+pub const EAGAIN: i64 = 11; // Resource temporarily unavailable
+pub const ENOMEM: i64 = 12; // Out of memory
+pub const EACCES: i64 = 13; // Permission denied
+pub const EFAULT: i64 = 14; // Bad address
+pub const EEXIST: i64 = 17; // File exists
+pub const EXDEV: i64 = 18; // Invalid cross-device link
+pub const ENOTDIR: i64 = 20; // Not a directory
+pub const EISDIR: i64 = 21; // Is a directory
+pub const EINVAL: i64 = 22; // Invalid argument
+pub const ENFILE: i64 = 23; // Too many open files in system
+pub const EMFILE: i64 = 24; // Too many open files (per process)
+pub const EPIPE: i64 = 32; // Broken pipe
+pub const ERANGE: i64 = 34; // Math result not representable
+pub const ENAMETOOLONG: i64 = 36; // File name too long
+pub const ENOEXEC: i64 = 8; // Exec format error
+pub const ENOTTY: i64 = 25; // Not a typewriter (inappropriate ioctl)
+pub const ESPIPE: i64 = 29; // Illegal seek (non-seekable fd)
+pub const EROFS: i64 = 30; // Read-only file system
+pub const ENOSYS: i64 = 38; // Function not implemented
+pub const ENOTEMPTY: i64 = 39; // Directory not empty
+pub const E2BIG: i64 = 7; // Argument list too long
+pub const EAFNOSUPPORT: i64 = 97; // Address family not supported
+pub const EADDRINUSE: i64 = 98; // Address already in use
+pub const ENETUNREACH: i64 = 101; // Network is unreachable
+pub const ECONNRESET: i64 = 104; // Connection reset by peer
+pub const EISCONN: i64 = 106; // Transport endpoint is already connected
+pub const ENOTCONN: i64 = 107; // Transport endpoint is not connected
+pub const ETIMEDOUT: i64 = 110; // Connection timed out
+pub const EBUSY: i64 = 16; // Device or resource busy
+pub const EOPNOTSUPP: i64 = 95; // Operation not supported
+pub const ECONNABORTED: i64 = 103; // Software caused connection abort
+pub const ENOTSOCK: i64 = 88; // Socket operation on non-socket
+pub const ECONNREFUSED: i64 = 111; // Connection refused
